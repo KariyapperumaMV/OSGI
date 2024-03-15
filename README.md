@@ -12,7 +12,7 @@
     <li>Library Sttaff Management</li>
 </ul>
 
-<table table-align="center">
+<table align="middle">
     <tr>
         <th text-align="center">Publishers</th>
         <th text-align="center">Subscriber</th>
@@ -46,4 +46,4 @@
 ## Main purpose
 This application has been developed to fulfilment of an assignment in Software Architecture module in the year 3 semester 2.
 
-<img src="https://static.sliit.lk/wp-content/uploads/2021/10/24070027/SLIIT.png" align="center" width="50%" hight="25%">
+<img src="https://static.sliit.lk/wp-content/uploads/2021/10/24070027/SLIIT.png" align="middle" width="50%" hight="25%">
