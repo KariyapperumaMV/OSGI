@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AuthenticationPublisher
+Bundle-SymbolicName: AuthenticationPublisher
+Bundle-Version: 1.1.0.qualifier
+Export-Package: authenticationPublisher
+Bundle-Activator: authenticationPublisher.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-20
+Automatic-Module-Name: AuthenticationPublisher
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
