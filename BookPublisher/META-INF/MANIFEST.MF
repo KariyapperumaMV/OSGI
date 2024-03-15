@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: BookPublisher
+Bundle-SymbolicName: BookPublisher
+Bundle-Version: 1.0.0.qualifier
+Export-Package: bookPublisher
+Bundle-Activator: bookPublisher.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-20
+Automatic-Module-Name: BookPublisher
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
