@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LibraryClientPublisher
+Bundle-SymbolicName: LibraryMemberPublisher
+Bundle-Version: 1.1.0.qualifier
+Export-Package: libraryMemberPublisher
+Bundle-Activator: libraryMemberPublisher.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-20
+Automatic-Module-Name: LibraryClientPublisher
+Import-Package: bookPublisher,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
