@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LibraryStaffPublisher
+Bundle-SymbolicName: LibraryStaffPublisher
+Bundle-Version: 1.1.0.qualifier
+Export-Package: libraryStaffPublisher
+Bundle-Activator: libraryStaffPublisher.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-20
+Automatic-Module-Name: LibraryStaffPublisher
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
