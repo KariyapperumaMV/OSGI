@@ -16,6 +16,7 @@ import bookUI.BookUI;
 import libraryMemberPublisher.ILibraryMember;
 import libraryStaffPublisher.ILibraryStaff;
 import memberUI.MemberUI;
+import staffUI.StaffUI;
 
 public class MainMenuUI extends JFrame{
 	
@@ -30,11 +31,7 @@ public class MainMenuUI extends JFrame{
 	private ILibraryStaff staffService;
 	private AuthenticationInterface authenticationService;
 	
-	/*public MainMenuUI(IBook bookService, ILibraryClient clientService) {
-		this.bookService = bookService;
-		this.clientService = clientService;
-		Initial();
-	}*/
+
 	public MainMenuUI(IBook bookService, ILibraryMember clientService, ILibraryStaff staffService) {
 		this.bookService = bookService;
 		this.clientService = clientService;
@@ -85,7 +82,7 @@ public class MainMenuUI extends JFrame{
 		buttonStaff.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				new MemberUI(clientService);//change
+				new StaffUI(staffService);
 			}
 		});
 	
@@ -101,7 +98,7 @@ public class MainMenuUI extends JFrame{
 				
 				JOptionPane.showMessageDialog( contentPane, "You Logged out!!","Log out",JOptionPane.PLAIN_MESSAGE);
 				
-				new AuthenticationUI(authenticationService);//change
+				new AuthenticationUI(authenticationService);
 			}
 		});
 	

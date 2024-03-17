@@ -7,6 +7,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import bookPublisher.IBook;
+import libraryMemberPublisher.ILibraryMember;
+import libraryStaffPublisher.ILibraryStaff;
 import mainMenuUI.MainMenuUI;
 
 public class BookUI {
@@ -20,6 +22,8 @@ public class BookUI {
 	private JFrame frame;
 
 	private IBook bookService;
+	private ILibraryMember clientService;
+	private ILibraryStaff staffService;
 	
 	public BookUI(IBook bookService) {
 		this.bookService = bookService;
@@ -27,7 +31,7 @@ public class BookUI {
 	
 		buttonBookHome.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new MainMenuUI(bookService, null, null);
+				new MainMenuUI(bookService, clientService, staffService);
 				frame.setVisible(false);
 			}
 		});

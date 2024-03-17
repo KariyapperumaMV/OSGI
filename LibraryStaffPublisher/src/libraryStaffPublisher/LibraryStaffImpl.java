@@ -22,7 +22,7 @@ public class LibraryStaffImpl implements ILibraryStaff{
 			for (LibraryStaff object : staffList) {
 				i = i + 1;
 				if(object.getNIC().equals(NIC)) {
-					staffList.set(i, new LibraryStaff (staff.getNIC(), staff.getName(), staff.getAddress(), staff.getPhoneNo(), staff.getType()));
+					staffList.set(i, new LibraryStaff (staff.getNIC(), staff.getName(), staff.getPhoneNo(), staff.getType()));
 					return true;	//if the client details have successfully updated
 				}
 			}
@@ -47,12 +47,12 @@ public class LibraryStaffImpl implements ILibraryStaff{
 	}
 
 	@Override
-	public LibraryStaff libraryStaffGetByNIc(String NIc) {
+	public LibraryStaff libraryStaffGetByNIC(String nic) {
 		if(staffList.isEmpty()) {
 			return null;	//list is empty
 		}else {
 			for (LibraryStaff object : staffList) {
-				if (object.getNIC().equals(NIc)) {
+				if (object.getNIC().equals(nic)) {
 					return object; 	//if the client exists
 				}
 			}

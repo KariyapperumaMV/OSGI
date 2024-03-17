@@ -36,7 +36,7 @@ public class DeleteBookUI {
 	private IBook bookService;
 	
 	public DeleteBookUI(IBook bookService) {
-this.bookService = bookService;
+		this.bookService = bookService;
 		
 		initialize();
 		
@@ -165,7 +165,7 @@ this.bookService = bookService;
 						if(book != null) {
 							
 							//Book Details
-							textAreaDelete.setText("Employee ID : " + book.getId()  +
+							textAreaDelete.setText("Book ID : " + book.getId()  +
 									"\nBook Name : " + book.getName() +
 									"\nAuthor : " + book.getAuthor() +
 									"\nBook Type : " + book.getType() + "\n");

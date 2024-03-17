@@ -6,7 +6,8 @@ Bundle-Version: 1.0.0.qualifier
 Export-Package: authenticationUI,
  bookUI,
  mainMenuUI,
- memberUI
+ memberUI,
+ staffUI
 Bundle-Activator: authenticationUI.Activator
 Bundle-RequiredExecutionEnvironment: JavaSE-20
 Automatic-Module-Name: LibraryMain

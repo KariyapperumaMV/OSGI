@@ -12,6 +12,8 @@ import javax.swing.JTextField;
 
 import bookPublisher.Book;
 import bookPublisher.IBook;
+import libraryMemberPublisher.ILibraryMember;
+import libraryStaffPublisher.ILibraryStaff;
 import mainMenuUI.MainMenuUI;
 
 public class UpdateBookUI {
@@ -36,8 +38,9 @@ public class UpdateBookUI {
 	
 	private JButton buttonUpdate;
 	
-	//declare book interface 
 	private IBook bookService;
+	private ILibraryMember clientService;
+	private ILibraryStaff staffService;
 	
 	public UpdateBookUI(IBook bookService) {
 		this.bookService = bookService;
@@ -46,7 +49,7 @@ public class UpdateBookUI {
 		
 		buttonBookHome.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new MainMenuUI(bookService, null, null);
+				new MainMenuUI(bookService, clientService, staffService);
 				frame.setVisible(false);
 			}
 		});

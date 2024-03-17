@@ -7,7 +7,6 @@ public class LibraryStaff {
 	
 	private String NIC;
 	private String Name;
-	private String Address;
 	private String phoneNo;
 	private String type;
 	/**
@@ -17,11 +16,10 @@ public class LibraryStaff {
 	 * @param phoneNo
 	 * @param type
 	 */
-	public LibraryStaff(String nIC, String name, String address, String phoneNo, String type) {
+	public LibraryStaff(String nIC, String name, String phoneNo, String type) {
 		super();
 		NIC = nIC;
 		Name = name;
-		Address = address;
 		this.phoneNo = phoneNo;
 		this.type = type;
 	}
@@ -48,18 +46,6 @@ public class LibraryStaff {
 	 */
 	public void setName(String name) {
 		Name = name;
-	}
-	/**
-	 * @return the address
-	 */
-	public String getAddress() {
-		return Address;
-	}
-	/**
-	 * @param address the address to set
-	 */
-	public void setAddress(String address) {
-		Address = address;
 	}
 	/**
 	 * @return the phoneNo
