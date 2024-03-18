@@ -85,7 +85,7 @@ public class AddStaffUI {
 		
 		buttonSearchStaff.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new SearchStaffUI(bookService);
+				new SearchStaffUI(staffService);
 				frame.setVisible(false);
 			}
 		});

@@ -36,6 +36,7 @@ public class MainMenuUI extends JFrame{
 		this.bookService = bookService;
 		this.clientService = clientService;
 		this.staffService = staffService;
+		
 		Initial();
 	}
 	
